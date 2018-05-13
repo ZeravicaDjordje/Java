@@ -19,7 +19,7 @@ public class Linkedin {
 	String Email = EmailScan.nextLine();
 	System.out.println("Enter your Password: ");
 	Scanner PasswordScan = new Scanner(System.in);
-	String Email = PasswordScan.nextLine();
+	String Password = PasswordScan.nextLine();
 	MyNetwork.LogIn(Email, Password, browser);
 	MyNetwork.MyConnection(browser, 0, scroll);
 	MyNetwork.allConnection(browser, 5, scroll);
