@@ -14,7 +14,13 @@ public class Linkedin {
 	System.out.println("Test");
 	WebDriver browser = Login.StartBrowser("https://www.linkedin.com");
 	Scroll scroll = new Scroll(browser);
-	MyNetwork.LogIn("zeravicadjordje1@gmail.com","Domingomogli1995",browser);
+	System.out.println("Enter your Email: ");
+	Scanner EmailScan = new Scanner(System.in);
+	String Email = EmailScan.nextLine();
+	System.out.println("Enter your Password: ");
+	Scanner PasswordScan = new Scanner(System.in);
+	String Email = PasswordScan.nextLine();
+	MyNetwork.LogIn(Email, Password, browser);
 	MyNetwork.MyConnection(browser, 0, scroll);
 	MyNetwork.allConnection(browser, 5, scroll);
 	Messages.sendMessage(browser);
